@@ -15,12 +15,13 @@ public class MyInterceptor implements Interceptor {
 	@Override
 	public void around(Object proxy, Object target, Method method, Object[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("反射方法后的逻辑");
+		
+		System.out.println("取代了被代理对象的方法");
 	}
 
 	@Override
 	public void after(Object proxy, Object target, Method method, Object[] args) {
-		System.out.println("取代了被代理对象的方法");
+		System.out.println("反射方法后的逻辑");
 		
 	}
 
